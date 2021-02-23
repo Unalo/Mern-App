@@ -1,14 +1,14 @@
 import React from "react"
 
-const ContactCard = (props) => {
-    console.log(props);
+const ContactCard = (props ) => {
+    console.log(props.contact);
     return (
-        <div>
-            <div className="contact-card">
-                <img src={props.contact.imgUrl} />
-                <h3> name: {props.contact.name} </h3>
-                <p>Phone:{props.contact.phone}</p>
-                <p>Email: {props.contact.email}</p>
+        <div className="todo-item">
+             <div className="contact-card">
+                {/* <img src="https://via.placeholder.com/150"/> */}
+                <h3>{props.contact.name}</h3>
+                <p>{props.contact.phone}</p>
+                <p>{props.contact.email}</p>
             </div>
         </div>
     )

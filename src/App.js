@@ -1,56 +1,66 @@
 import React from 'react';
 import './App.css';
-import CardList from "./components/ContactCard";
-import Hearder from "./components/Header"
-import Content from "./components/Content"
-import Footer from "./components/Footer"
-function App() {
+import ToDoItem from "./components/ContactCard";
+import Jokes from "./components/Jokes"
+
+const App = () => {
   return (
-     <div>
-      <Hearder/>
-      <Content/>
-      <Footer/>
-     </div>
-    // <div className="contacts">
+    <div className="todo-list">
+      <Jokes 
+        question="What's the best thing about Switzerland?" 
+        answer="I don't know, but the flag is a big plus!"
+      />
 
-    //   <CardList
-    //     contact={{
-    //       name: "Mr. Zukelwa",
-    //       imgUrl: "https://scontent.fcpt11-1.fna.fbcdn.net/v/t1.0-1/c40.0.160.160a/p160x160/38837042_2550762168282942_7885112986799439872_o.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_ohc=SW63GvvGrNYAX8NogCX&_nc_ht=scontent.fcpt11-1.fna&_nc_tp=27&oh=dd4a6c793d8c97c1da3399419053bf2f&oe=5FA14D50",
-    //       phone: "(212) 555-1234",
-    //       email: "mr.whiskaz@catnap.meow"
-    //     }}
-    //   />
+      <Jokes
+        //  question="Did you hear about the mathematician who's afraid of negative numbers?" 
+         answer="He'll stop at nothing to avoid them!"
+      />
 
-    //   <CardList
+      <Jokes 
+         question="Hear about the new restaurant called Karma?" 
+         answer="There’s no menu: You get what you deserve."
+      />
 
-    //     contact={{
-    //       name: "Mr. Mtshokotsa",
-    //       imgUrl: "https://media-exp1.licdn.com/dms/image/C4D03AQEY4lpQJwQ7iw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=MrH7uCQ7lPJtX10Kyzv781EspHsNv02Vuhq8-DFldtQ",
-    //       phone: "(212) 555-1234",
-    //       email: "mr.whiskaz@catnap.meow"
-    //     }}
-    //   />
+      <Jokes
+        question="Did you hear about the actor who fell through the floorboards?" 
+        answer="He was just going through a stage."
+      />
+      {/* <ToDoItem 
+        humer = {{name:"Unalo",phone:"0746544974", email:"Unalomtshokotsha@Gmail.com" ,laugh:"wena ukhona"}}
+        contact ={{ name:"Unalo",phone:"0746544974", email:"Unalomtshokotsha@Gmail.com"}}   
+      /> */}
+      {/* <ToDoItem
+              humer = {{name:"Unalo",phone:"0746544974", email:"Unalomtshokotsha@Gmail.com" ,laugh:"wena ukhona"}}
 
-    //   <CardList
-    //     contact={{
-    //       name: "Mr. Thabang",
-    //       imgUrl: "https://media-exp1.licdn.com/dms/image/C4E03AQHfkG84mD-k8A/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=CMuxoztuSTqTMzyvDE6zNrdSpw8JjsEavS4rKew3IhQ",
-    //       phone: "(212) 555-1234",
-    //       email: "mr.whiskaz@catnap.meow"
-    //     }}
-    //   />
+      contact = {{name:"Makho", phone:"0746544974", email:"Makho@Gmail.com"}}
+         
+      />
+      <ToDoItem
+              humer = {{name:"Unalo",phone:"0746544974", email:"Unalomtshokotsha@Gmail.com" ,laugh:"wena ukhona"}}
 
-    //   <CardList
-    //     contact={{
-    //       name: "Mr. Yanta",
-    //       imgUrl: "https://mindfulness.org.za/wp-content/uploads/2019/07/Profile-Mbuyi-01.jpg",
-    //       phone: "(212) 555-1234",
-    //       email: "mr.whiskaz@catnap.meow"
-    //     }}
-    //   />
+      contact = {{ name:"Thabang", phone:"0746544974", email:"Thabang@Gmail.com"}}
+      />
+      <ToDoItem
+              humer = {{name:"Unalo",phone:"0746544974", email:"Unalomtshokotsha@Gmail.com" ,laugh:"wena ukhona"}}
 
-    // </div>
+      contact = {{name:"Pholisa", phone:"0746544974", email:"Pholisa@Gmail.com"}}
+      /> */}
+    </div>
   )
 }
+// const App = () =>  {
+//   const date = new Date()
+//   let time = date.getHours()
+//   var timeOfTheDay = "";
+//   if (time < 12) {
+//     timeOfTheDay = "Morning"
+//   } else if (time >= 12 && time < 17) {
+//     timeOfTheDay = "Afternoom"
+//   } else {
+//     timeOfTheDay = "night"
+//   }
+//   return (
+//     <h1> Good {`${timeOfTheDay}!`} Bhuti Unalo</h1>
+//   )
+// }
 export default App;
