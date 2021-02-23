@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ToDoItem from "./components/ContactCard";
+import ContactCard from "./components/ContactCard";
 import Jokes from "./components/Jokes"
 
 const App = () => {
@@ -48,19 +48,5 @@ const App = () => {
     </div>
   )
 }
-// const App = () =>  {
-//   const date = new Date()
-//   let time = date.getHours()
-//   var timeOfTheDay = "";
-//   if (time < 12) {
-//     timeOfTheDay = "Morning"
-//   } else if (time >= 12 && time < 17) {
-//     timeOfTheDay = "Afternoom"
-//   } else {
-//     timeOfTheDay = "night"
-//   }
-//   return (
-//     <h1> Good {`${timeOfTheDay}!`} Bhuti Unalo</h1>
-//   )
-// }
+
 export default App;
