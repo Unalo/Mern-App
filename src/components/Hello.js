@@ -3,7 +3,7 @@ import React from "react";
 const Hello = () =>  {
   const date = new Date()
   let time = date.getHours()
-  var timeOfTheDay = "";
+  var timeOfTheDay;
   if (time < 12) {
     timeOfTheDay = "Morning"
   } else if (time >= 12 && time < 17) {
